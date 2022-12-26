@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="18c9f317-f349-4f3e-81c6-2387932a32bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/StringUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/util/StringUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +57,38 @@
       <recent name="org.example.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringUtilTest">
+  <component name="RunManager" selected="JUnit.PasswordUtilTest">
+    <configuration name="PasswordUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.PasswordUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordUtilTest.weakWhenHasLessThan8Letters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.PasswordUtilTest" />
+      <option name="METHOD_NAME" value="weakWhenHasLessThan8Letters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
@@ -93,6 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordUtilTest" />
+        <item itemvalue="JUnit.PasswordUtilTest.weakWhenHasLessThan8Letters" />
         <item itemvalue="JUnit.StringUtilTest" />
         <item itemvalue="JUnit.StringUtilTest.TestRepeat" />
       </list>
