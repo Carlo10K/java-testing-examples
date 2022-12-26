@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="18c9f317-f349-4f3e-81c6-2387932a32bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/util/PasswordUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/PasswordUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/util/PasswordUtilTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/StringUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/util/StringUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/javatests/payments/PaymentProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/payments/PaymentProcessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -57,17 +53,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.javatests.payments" />
       <recent name="org.example.javatests.player" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.javatests.payments" />
       <recent name="org.example.javatests.player" />
       <recent name="org.example.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="JUnit.PaymentProcessorTest">
     <configuration name="PasswordUtilTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
@@ -93,6 +91,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.util" />
       <option name="MAIN_CLASS_NAME" value="org.example.util.PasswordUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.javatests.payments.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.javatests.payments" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.payments.PaymentProcessorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,28 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javatests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.util" />
-      <option name="MAIN_CLASS_NAME" value="org.example.util.StringUtilTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PaymentProcessorTest" />
         <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.PasswordUtilTest (1)" />
         <item itemvalue="JUnit.StringUtilTest (1)" />
         <item itemvalue="JUnit.PasswordUtilTest" />
-        <item itemvalue="JUnit.StringUtilTest" />
       </list>
     </recent_temporary>
   </component>
