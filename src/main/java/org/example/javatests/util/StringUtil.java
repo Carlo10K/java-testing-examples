@@ -1,4 +1,4 @@
-package org.example.util;
+package org.example.javatests.util;
 
 public class StringUtil {
     public static String repeat(String str, int times){

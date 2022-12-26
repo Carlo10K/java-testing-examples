@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="18c9f317-f349-4f3e-81c6-2387932a32bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/util/PasswordUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/PasswordUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/util/PasswordUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/util/StringUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/util/StringUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +56,33 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.javatests.player" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.javatests.player" />
       <recent name="org.example.util" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordUtilTest">
+  <component name="RunManager" selected="JUnit.PlayerTest">
+    <configuration name="PasswordUtilTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.javatests.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.javatests.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.util.PasswordUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PasswordUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
@@ -73,18 +98,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordUtilTest.weakWhenHasLessThan8Letters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.util.*" />
+          <option name="PATTERN" value="org.example.javatests.player.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.util" />
-      <option name="MAIN_CLASS_NAME" value="org.example.util.PasswordUtilTest" />
-      <option name="METHOD_NAME" value="weakWhenHasLessThan8Letters" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="org.example.javatests.player" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.player.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringUtilTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.javatests.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.javatests.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.util.StringUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,28 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtilTest.TestRepeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javatests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.util" />
-      <option name="MAIN_CLASS_NAME" value="org.example.util.StringUtilTest" />
-      <option name="METHOD_NAME" value="TestRepeat" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest" />
+        <item itemvalue="JUnit.PasswordUtilTest (1)" />
+        <item itemvalue="JUnit.StringUtilTest (1)" />
         <item itemvalue="JUnit.PasswordUtilTest" />
-        <item itemvalue="JUnit.PasswordUtilTest.weakWhenHasLessThan8Letters" />
         <item itemvalue="JUnit.StringUtilTest" />
-        <item itemvalue="JUnit.StringUtilTest.TestRepeat" />
       </list>
     </recent_temporary>
   </component>

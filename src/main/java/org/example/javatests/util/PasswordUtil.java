@@ -1,4 +1,4 @@
-package org.example.util;
+package org.example.javatests.util;
 
 public class PasswordUtil{
 

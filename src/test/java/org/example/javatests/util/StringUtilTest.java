@@ -1,4 +1,4 @@
-package org.example.util;
+package org.example.javatests.util;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

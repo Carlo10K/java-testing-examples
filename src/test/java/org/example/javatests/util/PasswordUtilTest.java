@@ -1,10 +1,9 @@
-package org.example.util;
+package org.example.javatests.util;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.example.util.PasswordUtil.SecurityLevel.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.example.javatests.util.PasswordUtil.SecurityLevel.*;
 
 class PasswordUtilTest {
     @Test
