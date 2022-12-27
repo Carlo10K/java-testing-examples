@@ -7,7 +7,11 @@
     <list default="true" id="18c9f317-f349-4f3e-81c6-2387932a32bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/data/MovieRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/data/MovieRepositoryJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/service/MovieService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/data/MovieRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/data/MovieRepositoryIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/service/MovieServiceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/service/MovieServiceShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-scripts/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-scripts/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +76,7 @@
       <recent name="org.example.javatests.discounts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieRepositoryIntegrationTest">
+  <component name="RunManager" selected="JUnit.MovieServiceShould">
     <configuration name="DateUtilLeapYearShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
@@ -150,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieRepositoryIntegrationTest" />
         <item itemvalue="JUnit.MovieServiceShould" />
+        <item itemvalue="JUnit.MovieRepositoryIntegrationTest" />
         <item itemvalue="JUnit.RomanNumeralsTest" />
         <item itemvalue="JUnit.FizzBuzzUtilTest" />
         <item itemvalue="JUnit.DateUtilLeapYearShould" />

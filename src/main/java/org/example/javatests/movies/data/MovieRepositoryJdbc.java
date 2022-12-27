@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Objects;
 
 public class MovieRepositoryJdbc implements MovieRepository {
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
     public MovieRepositoryJdbc(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
@@ -27,12 +27,18 @@ public class MovieRepositoryJdbc implements MovieRepository {
 
     @Override
     public void saveOrUpdate(Movie movie) {
-
+        jdbcTemplate.update("INSERT INTO movies (name, minutes, director, genre) values (?,?,?,?)",
+                movie.getName(),
+                movie.getMinutes(),
+                movie.getDirector(),
+                movie.getGenre().toString()
+                );
     }
 
     RowMapper<Movie> movieMapper = (rs, rowNum) -> new Movie(
             rs.getInt("id"),
             rs.getString("name"),
             rs.getInt("minutes"),
+            rs.getString("director"),
             Genre.valueOf(rs.getString("genre")));
 }

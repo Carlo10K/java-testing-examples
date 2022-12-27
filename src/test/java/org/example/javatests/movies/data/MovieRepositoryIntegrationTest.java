@@ -36,17 +36,24 @@ class MovieRepositoryIntegrationTest {
         Collection<Movie> movies = movieRepository.findAll();
 
         Assertions.assertEquals(Arrays.asList(
-                new Movie(1,"Dark Knight", 152, Genre.ACTION),
-                new Movie(2,"Memento", 113, Genre.THRILLER),
-                new Movie(3,"Matrix", 136, Genre.ACTION)
+                new Movie(1,"Dark Knight", 152, "Christopher Nolan", Genre.ACTION),
+                new Movie(2,"Memento", 113, "Christopher Nolan",Genre.THRILLER),
+                new Movie(3,"Matrix", 136, "Wachowski Sisters",Genre.ACTION)
         ), movies);
     }
 
     @Test
     void loadById() {
         Movie movie = movieRepository.findById(2);
-        Assertions.assertEquals(new Movie(2,"Memento",113, Genre.THRILLER), movie);
+        Assertions.assertEquals(new Movie(2,"Memento",113, "Christopher Nolan", Genre.THRILLER), movie);
     }
 
+    @Test
+    void insertMovie() {
+        Movie movie = new Movie("Super ", 112, "Christopher Nolan", Genre.THRILLER);
+        movieRepository.saveOrUpdate(movie);
 
+        Movie movieFromDB = movieRepository.findById(4);
+        Assertions.assertEquals(new Movie(4,"Super ", 112, "Christopher Nolan", Genre.THRILLER), movieFromDB  );
+    }
 }

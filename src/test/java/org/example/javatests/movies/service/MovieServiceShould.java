@@ -22,13 +22,14 @@ class MovieServiceShould {
         MovieRepository movieRepository = Mockito.mock(MovieRepository.class);
         Mockito.when(movieRepository.findAll()).thenReturn(
                 Arrays.asList(
-                        new Movie(1,"Dark Knight", 152, Genre.ACTION),
-                        new Movie(2,"Memento", 113, Genre.THRILLER),
-                        new Movie(3,"There's Something About Mary", 119, Genre.COMEDY),
-                        new Movie(4,"Super 8", 112, Genre.THRILLER),
-                        new Movie(5,"Scream", 111, Genre.HORROR),
-                        new Movie(6,"Home Alone", 103, Genre.COMEDY),
-                        new Movie(7,"Matrix", 136, Genre.ACTION)
+                        new Movie(1,"Dark Knight", 152, "Christopher Nolan", Genre.ACTION),
+                        new Movie(2,"Memento", 113, "Christopher Nolan",Genre.THRILLER),
+                        new Movie(3,"There's Something About Mary", 119, "Peter Farrelly", Genre.COMEDY),
+                        new Movie(4,"Super 8", 112, "J. J. Abrams", Genre.THRILLER),
+                        new Movie(5,"Scream", 111, "Tyler Gillett", Genre.HORROR),
+                        new Movie(6,"Home Alone", 103, "Chris Columbus", Genre.COMEDY),
+                        new Movie(7,"Matrix", 136, "Wachowski Sisters", Genre.ACTION),
+                        new Movie(8,"Superman", 110, "Zack Snyder", Genre.ACTION)
                 )
         );
         movieService = new MovieService(movieRepository);
@@ -43,7 +44,19 @@ class MovieServiceShould {
     @Test
     void returnMoviesByDuration() {
         Collection<Movie> movies = movieService.findMoviesByLength(119);
-        Assertions.assertEquals(Arrays.asList(2,3,4,5,6), getMovieIds(movies));
+        Assertions.assertEquals(Arrays.asList(2,3,4,5,6,8), getMovieIds(movies));
+    }
+
+    @Test
+    void returnMoviesByName() {
+        Collection<Movie> movies = movieService.findMoviesByName("Super");
+        Assertions.assertEquals(Arrays.asList(4,8), getMovieIds(movies));
+    }
+
+    @Test
+    void returnMoviesByDirector() {
+        Collection<Movie> movies = movieService.findMoviesByDirector("nolan");
+        Assertions.assertEquals(Arrays.asList(1,2), getMovieIds(movies));
     }
 
     private static List<Integer> getMovieIds(Collection<Movie> movies) {
