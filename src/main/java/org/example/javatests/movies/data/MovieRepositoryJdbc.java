@@ -5,6 +5,7 @@ import org.example.javatests.movies.model.Movie;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import java.util.Collection;
+import java.util.Objects;
 
 public class MovieRepositoryJdbc implements MovieRepository {
     private JdbcTemplate jdbcTemplate;
@@ -15,7 +16,8 @@ public class MovieRepositoryJdbc implements MovieRepository {
 
     @Override
     public Movie findById(long id) {
-        return null;
+        Object[] args ={ id };
+        return jdbcTemplate.queryForObject("SELECT * FROM movies WHERE id = ?",args, movieMapper);
     }
 
     @Override

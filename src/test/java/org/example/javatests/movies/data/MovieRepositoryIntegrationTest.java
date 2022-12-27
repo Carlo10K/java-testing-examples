@@ -3,6 +3,7 @@ package org.example.javatests.movies.data;
 import org.example.javatests.movies.model.Genre;
 import org.example.javatests.movies.model.Movie;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -19,14 +20,19 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MovieRepositoryIntegrationTest {
 
-    @Test
-    void loadMovies() throws SQLException {
+
+    private MovieRepositoryJdbc movieRepository;
+
+    @BeforeEach
+    void setUp() throws SQLException {
         DataSource dataSource = new DriverManagerDataSource("jdbc:h2:mem:test;MODE=MYSQL", "sa", "sa");
         ScriptUtils.executeSqlScript(dataSource.getConnection(), new ClassPathResource("sql-scripts/data.sql"));
-
-
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        MovieRepositoryJdbc movieRepository = new MovieRepositoryJdbc(jdbcTemplate);
+        movieRepository = new MovieRepositoryJdbc(jdbcTemplate);
+    }
+
+    @Test
+    void loadMovies(){
         Collection<Movie> movies = movieRepository.findAll();
 
         Assertions.assertEquals(Arrays.asList(
@@ -35,4 +41,12 @@ class MovieRepositoryIntegrationTest {
                 new Movie(3,"Matrix", 136, Genre.ACTION)
         ), movies);
     }
+
+    @Test
+    void loadById() {
+        Movie movie = movieRepository.findById(2);
+        Assertions.assertEquals(new Movie(2,"Memento",113, Genre.THRILLER), movie);
+    }
+
+
 }
