@@ -6,12 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="18c9f317-f349-4f3e-81c6-2387932a32bb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/data/MovieRepositoryJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/data/MovieRepositoryJdbc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/model/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javatests/movies/service/MovieService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/data/MovieRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/data/MovieRepositoryIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/service/MovieServiceShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/javatests/movies/service/MovieServiceShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/sql-scripts/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/sql-scripts/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,37 +74,7 @@
       <recent name="org.example.javatests.discounts" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MovieServiceShould">
-    <configuration name="DateUtilLeapYearShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javatests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.javatests.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.javatests.util" />
-      <option name="MAIN_CLASS_NAME" value="org.example.javatests.util.DateUtilLeapYearShould" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FizzBuzzUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javatests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.javatests.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.javatests.util" />
-      <option name="MAIN_CLASS_NAME" value="org.example.javatests.util.FizzBuzzUtilTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MovieServiceShould$returnMoviesByTemplate">
     <configuration name="MovieRepositoryIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
@@ -117,6 +85,37 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.javatests.movies.data" />
       <option name="MAIN_CLASS_NAME" value="org.example.javatests.movies.data.MovieRepositoryIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieRepositoryIntegrationTest.loadMovies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.javatests.movies.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.javatests.movies.data" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.movies.data.MovieRepositoryIntegrationTest" />
+      <option name="METHOD_NAME" value="loadMovies" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieServiceShould$returnMoviesByTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javatests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.javatests.movies.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.javatests.movies.service.MovieServiceShould" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.movies.service.MovieServiceShould$returnMoviesByTemplate" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,28 +136,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieServiceShould.returnMoviesByTemplate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javatests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.javatests.numbers.*" />
+          <option name="PATTERN" value="org.example.javatests.movies.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.javatests.numbers" />
-      <option name="MAIN_CLASS_NAME" value="org.example.javatests.numbers.RomanNumeralsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="org.example.javatests.movies.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.javatests.movies.service.MovieServiceShould" />
+      <option name="METHOD_NAME" value="returnMoviesByTemplate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MovieServiceShould" />
+        <item itemvalue="JUnit.MovieServiceShould$returnMoviesByTemplate" />
         <item itemvalue="JUnit.MovieRepositoryIntegrationTest" />
-        <item itemvalue="JUnit.RomanNumeralsTest" />
-        <item itemvalue="JUnit.FizzBuzzUtilTest" />
-        <item itemvalue="JUnit.DateUtilLeapYearShould" />
+        <item itemvalue="JUnit.MovieServiceShould" />
+        <item itemvalue="JUnit.MovieServiceShould.returnMoviesByTemplate" />
+        <item itemvalue="JUnit.MovieRepositoryIntegrationTest.loadMovies" />
       </list>
     </recent_temporary>
   </component>
@@ -172,5 +172,16 @@
       <updated>1672066917112</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/javatests/movies/data/MovieRepositoryIntegrationTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

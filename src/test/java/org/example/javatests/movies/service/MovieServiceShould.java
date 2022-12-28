@@ -5,11 +5,13 @@ import org.example.javatests.movies.model.Genre;
 import org.example.javatests.movies.model.Movie;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -57,6 +59,46 @@ class MovieServiceShould {
     void returnMoviesByDirector() {
         Collection<Movie> movies = movieService.findMoviesByDirector("nolan");
         Assertions.assertEquals(Arrays.asList(1,2), getMovieIds(movies));
+    }
+
+
+    @Nested
+    class returnMoviesByTemplate {
+
+        @Test
+        void whenUsingId() {
+            Collection<Movie> movies = movieService.findMoviesByTemplate( new Movie(1,null, 0, null, null));
+            Assertions.assertEquals(Collections.singletonList(1), getMovieIds(movies));
+        }
+
+        @Test
+        void whenUsingDirectorAndMinutes() {
+            Collection<Movie> movies = movieService.findMoviesByTemplate( new Movie(null,null, 160, "Nolan", null));
+            Assertions.assertEquals(Arrays.asList(1,2), getMovieIds(movies));
+        }
+
+        @Test
+        void whenUsingNameAndMinutes() {
+            Collection<Movie> movies = movieService.findMoviesByTemplate( new Movie(null,"super", 160, null, null));
+            Assertions.assertEquals(Arrays.asList(4,8), getMovieIds(movies));
+        }
+
+        @Test
+        void whenUsingGenreAndMinutes() {
+            Collection<Movie> movies = movieService.findMoviesByTemplate( new Movie(null,null, 113, null, Genre.THRILLER));
+            Assertions.assertEquals(Arrays.asList(2,4), getMovieIds(movies));
+        }
+
+        @Test
+        void whenUsingNegativeMinutes() {
+            Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+                movieService.findMoviesByTemplate( new Movie(null,null, -1, null, null));
+            });
+            String expectedMessage = "the duration is not valid";
+            String actualMessage = exception.getMessage();
+
+            Assertions.assertTrue(actualMessage.contains(expectedMessage));
+        }
     }
 
     private static List<Integer> getMovieIds(Collection<Movie> movies) {

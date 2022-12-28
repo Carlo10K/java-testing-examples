@@ -34,11 +34,10 @@ class MovieRepositoryIntegrationTest {
     @Test
     void loadMovies(){
         Collection<Movie> movies = movieRepository.findAll();
-
         Assertions.assertEquals(Arrays.asList(
                 new Movie(1,"Dark Knight", 152, "Christopher Nolan", Genre.ACTION),
-                new Movie(2,"Memento", 113, "Christopher Nolan",Genre.THRILLER),
-                new Movie(3,"Matrix", 136, "Wachowski Sisters",Genre.ACTION)
+                new Movie(2,"Memento", 113, "Christopher Nolan", Genre.THRILLER),
+                new Movie(3,"Matrix", 136, "Wachowski Sisters", Genre.ACTION)
         ), movies);
     }
 

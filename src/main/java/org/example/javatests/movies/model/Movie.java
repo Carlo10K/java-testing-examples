@@ -6,9 +6,9 @@ public class Movie {
 
     private Integer id;
     private String name;
-    private int minutes;
-
+    private Integer minutes;
     private String director;
+    private Genre genre;
 
     public String getDirector() {
         return director;
@@ -17,8 +17,6 @@ public class Movie {
     public void setDirector(String director) {
         this.director = director;
     }
-
-    private Genre genre;
 
     public Movie(String name, int minutes, String director, Genre genre){
         this(null,name,minutes,director,genre);
@@ -69,7 +67,7 @@ public class Movie {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Movie movie = (Movie) o;
-        return minutes == movie.minutes && Objects.equals(id, movie.id) && name.equals(movie.name) && director.equals(movie.director) && genre == movie.genre;
+        return Objects.equals(minutes, movie.minutes) && Objects.equals(id, movie.id) && name.equals(movie.name) && director.equals(movie.director) && genre == movie.genre;
     }
 
     @Override
